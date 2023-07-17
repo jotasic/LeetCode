@@ -10,7 +10,6 @@ class Solution:
             digits[i] = number % 10
             
             if number < 10:
-                is_add_one = False
                 break
             else:
                 is_add_one = True
