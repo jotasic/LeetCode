@@ -8,16 +8,14 @@ class Solution:
         
         
         last_word = ''
-        i = len(s) - 1
+        string_size = len(s)
         
-        while i >= 0:
+        for i in range(string_size-1, -1, -1):
             if s[i] == ' ':
                 if last_word:
                     break
             else:
                 last_word = s[i] + last_word
-            
-            i = i-1
     
         return len(last_word)
         
