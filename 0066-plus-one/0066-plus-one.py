@@ -11,11 +11,8 @@ class Solution:
             
             if number < 10:
                 break
-            else:
-                is_add_one = True
         else:
-            if is_add_one:
-                digits.insert(0, 1)
+            digits.insert(0, 1)
             
         
         return digits
