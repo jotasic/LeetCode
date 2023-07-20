@@ -14,6 +14,5 @@ class Solution:
             return bf_depth
         
         cur_depth = bf_depth + 1
-        left_max, right_max = self.cal_depth(cur_depth, cur_leaf.left), self.cal_depth(cur_depth, cur_leaf.right)
-        max_depth = left_max if left_max >= right_max else right_max
-        return max_depth
+        depths = self.cal_depth(cur_depth, cur_leaf.left), self.cal_depth(cur_depth, cur_leaf.right)
+        return max(depths)
